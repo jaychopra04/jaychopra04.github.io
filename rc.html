@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Jay Chopra</title>
+    <meta name="description" content="An amalgamation of web-developer and investor. This is my portfolio website built using all the modern tools and technologies.">
+    <meta name="twitter:image" content="assets/img/android-chrome-512x512.png">
+    <meta property="og:image" content="assets/img/android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autour+One&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Cool-Menu-Navbar.css">
+    <link rel="stylesheet" href="assets/css/Jumbotron-Circular-Addon.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/text-animation.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body style="background: url(&quot;assets/img/endless-constellation.svg&quot;) center / auto;">
+    <div></div>
+    <div><div><h1 class="office-banner"><div class="animated_rainbow_1">Happy Birthday <br>Ratan Chopra</div>
+
+<style>
+.animated_rainbow_1 {
+	font-size: 42px;
+    padding: 20px;
+	font-family: Arial Black, Gadget, sans-serif;
+	background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+	-webkit-animation: animatedBackground_a 5s linear infinite alternate;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #0000;
+	background-clip: text;
+}
+
+@keyframes animatedBackground_a {
+	0% { background-position: 0 0 }
+	100% { background-position: -500px 0 }
+}
+
+</style>
+
+  
+</h1>
+<button>More Confetti ?! Click here</button></div>
+
+<style>
+.office-banner {
+  background-color: #ffffff;
+  
+  padding: 0.125em;
+  font-size: 8vw;
+  text-align: center;
+  white-space: nowrap;
+  transform: rotate(-10deg);
+  position: fixed;
+  top: 20%;
+  left: -5%;
+  right: -5%;
+  z-index: 100;
+  margin-top: 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100wh;
+	height: 80vh;
+	background: black;
+	font-weight: 100;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+button {
+	position: relative;
+	bottom: 40%;
+	font-size: 24pt;
+	letter-spacing: 3px;
+	background: #9b1c2c;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	transition: all 0.4s;
+	padding: 10px 20px;
+}
+
+button:hover {
+	color: #000000;
+}
+
+button:focus {
+	outline: none;
+}
+    
+</style>
+
+
+
+<script type="module">
+import confetti from "https://cdn.skypack.dev/canvas-confetti";
+confetti();
+
+var colors = ["#1eeb00","#f10204", "#f11bf1"];
+
+function frame() {
+  confetti({
+    particleCount: 1,
+    angle: 60,
+    spread: 50,
+    origin: { x: 0 },
+    colors: colors,
+  });
+  
+  
+
+  if (Date.now() < Date.now() + 500) {
+    requestAnimationFrame(frame);
+  }
+}
+
+window.onload = frame();
+const doItNow = (evt, hard) => {
+	const direction = Math.sign(lastX - evt.clientX);
+	lastX = evt.clientX;
+	const particleCount = hard ? r(122, 245) : r(2, 15);
+	confetti({
+		particleCount,
+		angle: r(90, 90 + direction * 30),
+		spread: r(45, 80),
+		origin: {
+			x: evt.clientX / window.innerWidth,
+			y: evt.clientY / window.innerHeight
+		}
+	});
+};
+const doIt = (evt) => {
+	doItNow(evt, false);
+};
+
+const doItHard = (evt) => {
+	doItNow(evt, true);
+};
+
+let lastX = 0;
+const butt = document.querySelector("button");
+butt.addEventListener("mousemove", doIt);
+butt.addEventListener("click", doItHard);
+
+function r(mi, ma) {
+	return parseInt(Math.random() * (ma - mi) + mi);
+}
+</script></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/agency.js"></script>
+    <script src="assets/js/document.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/text-animation.js"></script>
+</body>
+
+</html>
