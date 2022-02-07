@@ -288,7 +288,56 @@
     </section>
     <section style="padding-bottom: 80px;padding-top: 100px;">
         <div class="jumbotron text-center" style="background: var(--gray-dark);margin-right: 5px;margin-left: 5px;box-shadow: inset 0px 0px 20px 9px #000000;">
-            <h1 data-aos="zoom-in" style="color: var(--light);font-size: 60px;">Resume</h1>
+             <div class="waviy">
+   <span style="--i:1">R</span>
+   <span style="--i:2">E</span>
+   <span style="--i:3">S</span>
+   <span style="--i:4">U</span>
+   <span style="--i:5">M</span>
+   <span style="--i:6">E</span>
+     </div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waivy {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 50px;
+    margin-bottom: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+    </style>
+	
             <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" style="color: var(--light);margin-top: 20px;margin-bottom: 30px;font-size: 18px;">You can view my current Resume by clicking the Resume button</p>
             <p><a class="btn btn-primary" role="button" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" href="https://drive.google.com/file/d/1_0ZV2VSoKuZJ4u0ka8FTfNWPcUeS3-7P/view?usp=sharing" style="background: var(--pink);border-color: var(--light);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;font-size: 18px;">Resume</a></p>
         </div>
