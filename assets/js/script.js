@@ -1,13 +1,12 @@
-$(document).ready(function() {
-preloaderFadeOutTime = 500;
-    function hidePreloader() {
-    var preloader = $('.preloader');
-    preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
+(function($){
+'use strict';
+$(window).on('load', function () {
+if ($(".pre-loader").length > 0)
+{
+$(".pre-loader").fadeOut("slow");
+}
 });
-
-
+})(jQuery)
 
 
 
