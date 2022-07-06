@@ -340,3 +340,9 @@ a:hover .s-word {
   font-weight: 100;
 }
 
+.fit-cover {
+  object-fit: cover;
+}
+
+
+
