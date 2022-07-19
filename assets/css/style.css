@@ -482,19 +482,21 @@ a:hover .s-word {
   width: 5px;
 }
 
-.css-rainbow-text-3 {
-  background: linear-gradient(90deg, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-  color: #0000;
-  -webkit-background-clip: text;
-  background-clip: text;
-  margin-bottom: 40px;
-}
 
 #cbt:hover {
   background: #ffffff;
 }
 
 #cbt {
+  background: rgba(0,0,0,0.3);
+  border-color: rgba(255,255,255,0.5);
+}
+
+#cbtd:hover {
+  background: #ffffff;
+}
+
+#cbtd {
   background: rgba(0,0,0,0.3);
   border-color: rgba(255,255,255,0.5);
 }
